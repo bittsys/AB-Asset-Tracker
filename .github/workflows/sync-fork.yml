@@ -23,3 +23,7 @@ jobs:
       - name: Show result
         if: always()
         run: echo "Sync attempt finished"
+
+      - name: Keepalive
+        if: always()
+        uses: gautamkrishnar/keepalive-workflow@v2
